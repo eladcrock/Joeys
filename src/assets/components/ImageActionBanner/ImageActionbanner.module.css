@@ -1,0 +1,39 @@
+.card {
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/Users/dalec/Joeys_Bakery/src/assets/images/Store.jpg);
+  }
+  
+  .content {
+    position: absolute;
+    inset: 0;
+    padding: var(--mantine-spacing-xl);
+    z-index: 1;
+  }
+  
+  .action {
+    position: absolute;
+    bottom: var(--mantine-spacing-xl);
+    right: var(--mantine-spacing-xl);
+  }
+  
+  .title {
+    color: var(--mantine-color-white);
+    margin-bottom: calc(var(--mantine-spacing-xs) / 2);
+  }
+  
+  .description {
+    color: var(--mantine-color-white);
+    max-width: 220px;
+  }
+
+  .head {
+    font-family: Greycliff CF, var(--mantine-font-family);
+    margin: 0;
+    padding: 0;
+    color: #555; /* Dark gray color */
+ 
+  }
+  
+  

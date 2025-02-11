@@ -1,0 +1,47 @@
+.feature {
+  position: relative;
+  padding: var(--mantine-spacing-xl);
+  border-radius: 10px;
+  background-color: var(--mantine-color-pink-light);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 80px;
+  width: 140px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--mantine-color-yellow-light);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.icon {
+  color: var(--mantine-color-red-filled);
+}
+
+.title {
+  color: var(--mantine-color-brown-dark);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.head {
+  font-family: Greycliff CF, var(--mantine-font-family);
+/* Lighter font weight */
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  color: #555; /* Dark gray color */
+
+
+  }
+
+
