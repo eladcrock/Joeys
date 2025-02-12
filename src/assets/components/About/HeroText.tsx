@@ -14,7 +14,7 @@ export function HeroText() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>About Us</Title>
+        <Title className={classes.title}>About Us {" "} 🧑‍🧑‍🧒‍🧒 </Title>
 
         <Container p={0} size={600}>
           <Text size="lg" c="dimmed" className={classes.description}>

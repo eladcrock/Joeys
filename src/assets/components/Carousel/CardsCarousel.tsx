@@ -92,7 +92,7 @@ export function CardsCarousel() {
 
   return (<Container>
       <Title order={1} mb="xl" mt="md" className={classes.head}>
-      Display Case 👀
+      Display Case {" "} 👀
       </Title>
 
 
@@ -100,7 +100,7 @@ export function CardsCarousel() {
     <Carousel
       withIndicators
       loop // ✅ Fix infinite looping issue
-      slideSize={mobile ? "100%" : "33.3333%"} // ✅ Make slides responsive
+      slideSize={{ base: '100%', sm: '50%', md: '33.3333%' }}
       slideGap="md"
       align="start"
       slidesToScroll={mobile ? 1 : 1} // ✅ Ensure one slide scrolls at a time

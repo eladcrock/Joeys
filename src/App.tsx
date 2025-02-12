@@ -30,7 +30,7 @@ function App() {
         <HeroTitle />
       </div>
       {/* Container to wrap all content and ensure a column layout */}
-      {/* Gallery*/}'
+      {/* Gallery*/}                                      
       <div id="gallery">
         <CardsCarousel />
       </div>
@@ -40,6 +40,7 @@ function App() {
         <FeaturesAsymmetrical />
       </div>
       {/* Getting here*/}
+      < br />
       <div id="directions">
         <ImageActionBanner />
       </div>

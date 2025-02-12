@@ -30,18 +30,14 @@
 
 .title {
   color: var(--mantine-color-brown-dark);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Poppins", Greycliff CF, sans-serif; /* Modern & clean */
   font-weight: bold;
 }
 .head {
-  font-family: Greycliff CF, var(--mantine-font-family);
-/* Lighter font weight */
-  line-height: 1.1;
-  margin: 0;
-  padding: 0;
-  color: #555; /* Dark gray color */
-
-
+  font-family: "Great Vibes", Greycliff CF, cursive; /* Elegant calligraphy */  font-weight: 700; /* Strong but still graceful */
+  letter-spacing: 0.8px;
+  text-transform: none; /* Keeps natural flow */
+  color: #444; /* Slightly darker for contrast */
+   
   }
-
 

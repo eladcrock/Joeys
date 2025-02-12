@@ -47,9 +47,9 @@ const mockdata = [
   },
   {
     icon: IconCalendarEvent,
-    title: "Events & Catering",
+    title: "Special Events",
     description:
-      "We provide catering for events of all kinds, ensuring a sweet experience for you and your guests.",
+      "We provide cakes and pastries for events of all kinds, ensuring a sweet experience for you and your guests.",
   },
 ];
 
@@ -59,7 +59,7 @@ export function FeaturesAsymmetrical() {
   return (
     <Container mt={30} mb={30} size="lg">
       <Title order={1} mb="xl" mt="md" className={classes.head}>
-      Our Services 🍰🍩🥐
+     Services 🍰{" "}🍩
       {" "}
       </Title>
       <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>

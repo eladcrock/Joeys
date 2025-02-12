@@ -12,21 +12,19 @@
   
   /* Ensures title and category are readable */
   .title {
-    font-family: Greycliff CF, sans-serif;
-    font-weight: 900;
-    color: white;
-    line-height: 1.2;
-    font-size: 24px;
+    font-family: "Poppins", Greycliff CF, sans-serif; /* Modern & clean */
+    font-weight: 800; /* Retains boldness for readability */
+    font-size: 22px;
+    color: white; /* Contrasts with background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Enhances readability */
     margin-top: 10px;
   }
-  .head {
-    font-family: Greycliff CF, var(--mantine-font-family);
-  /* Lighter font weight */
-    line-height: 1.1;
-    margin: 0;
-    padding: 0;
-    color: #555; /* Dark gray color */
   
+  .head {
+  font-family: "Great Vibes", Greycliff CF, cursive; /* Elegant calligraphy */  font-weight: 700; /* Strong but still graceful */
+  letter-spacing: 0.8px;
+  text-transform: none; /* Keeps natural flow */
+  color: #555; /* Slightly darker for contrast */
    
   }
   
