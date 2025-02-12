@@ -12,7 +12,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://eladcrock.github.io/Joeys",
+  "homepage": "https://eladcrock.github.io/joeys",
+  
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@mantine/carousel": "^7.16.3",
