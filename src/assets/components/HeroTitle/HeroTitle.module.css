@@ -3,23 +3,21 @@
   box-sizing: border-box;
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
 }
-
-.inner {
-  position: relative;
-  padding-top: 200px;
-  padding-bottom: 120px;
-
-  @media (max-width: 768px) {
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
+.heroImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
+
+
 
 .title {
   font-family:
+
     Greycliff CF,
     var(--mantine-font-family);
-  font-size: 62px;
+  font-size: 82px;
   font-weight: 900;
   line-height: 1.1;
   margin: 0;

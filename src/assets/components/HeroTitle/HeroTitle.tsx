@@ -10,13 +10,14 @@ import {
 import { useState } from "react";
 import { Phone, MapPin } from "tabler-icons-react"; // Add icon imports
 import classes from "./HeroTitle.module.css";
+import cakeDrawing from "../../images/cake_Drawing.png"; // Adjust the path as necessary
 import { GetInTouchSimple } from "../GetInTouch/GetInTouchSimple.tsx";
 
 export function HeroTitle() {
   const [modalOpened, setModalOpened] = useState(false);
 
   return (
-    <Container size={700} className={classes.inner}>
+    <Container size={900} className={classes.inner}>
       <h1 className={classes.title}>
         Joeys{" "}
         <Text
@@ -29,7 +30,8 @@ export function HeroTitle() {
         </Text>{" "}
       </h1>
       <h2> Panaderia Y Pasteleria</h2>
-      <br></br>
+      <img src={cakeDrawing} alt="Cake Drawing" className={classes.heroImage} />
+
       <Text className={classes.description}>
         The Best Mexican Pastries in the Napa Valley
       </Text>
