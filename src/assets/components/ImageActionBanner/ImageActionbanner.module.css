@@ -1,3 +1,8 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+
+
 .card {
     height: 20rem;
     background-size: cover;
@@ -30,10 +35,10 @@
   }
 
   .head {
-    font-family: "Great Vibes", Greycliff CF, cursive; /* Elegant calligraphy */  font-weight: 700; /* Strong but still graceful */
-    letter-spacing: 0.8px;
+    font-family: "Lobster", cursive;
+    letter-spacing: 2px;
     text-transform: none; /* Keeps natural flow */
-    color: #444; /* Slightly darker for contrast */
+    color: #555; /* Slightly darker for contrast */
      
     }
   
