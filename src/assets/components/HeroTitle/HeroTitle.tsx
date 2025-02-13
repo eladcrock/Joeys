@@ -17,7 +17,7 @@ export function HeroTitle() {
   const [modalOpened, setModalOpened] = useState(false);
 
   return (
-    <Container size={900} className={classes.inner}>
+    <Container size={700} className={classes.inner}>
       <h1 className={classes.title}>
         Joeys{" "}
         <Text
@@ -32,9 +32,9 @@ export function HeroTitle() {
       <h2> Panaderia Y Pasteleria</h2>
       <img src={cakeDrawing} alt="Cake Drawing" className={classes.heroImage} />
 
-      <Text className={classes.description}>
+      {/* <Text className={classes.description}>
         The Best Mexican Pastries in the Napa Valley
-      </Text>
+      </Text> */}
 
       <Stack gap={1} align="center" mt="md">
         <Group justify="center" style={{ gap: 6 }}>
@@ -47,7 +47,7 @@ export function HeroTitle() {
               color: "white",
             }}
           >
-            <MapPin size={20} />
+            <MapPin size={15} />
           </ActionIcon>
           <Text color="dimmed">2556 Jefferson St, Napa, CA</Text>
         </Group>
@@ -61,7 +61,7 @@ export function HeroTitle() {
               color: "white",
             }}
           >
-            <Phone size={20} />
+            <Phone size={15} />
           </ActionIcon>
           <Text color="dimmed">(707) 254-9027</Text>
         </Group>
@@ -76,6 +76,7 @@ export function HeroTitle() {
       >
         Contact Us
       </Button>
+      < br />
 
       <Modal opened={modalOpened} onClose={() => setModalOpened(false)}>
         <GetInTouchSimple />

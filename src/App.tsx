@@ -30,6 +30,7 @@ function App() {
       <div id="home" >
         <HeroTitle />
       </div>
+      < br />
       {/* Container to wrap all content and ensure a column layout */}
       {/* Gallery*/}                                      
       <div id="gallery">
