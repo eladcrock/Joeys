@@ -11,7 +11,17 @@ export function ImageActionBanner() {
         Location
       </Title>
       <Text size="md" color="dimmed" mb="xl">
-        2556 Jefferson St, Napa, CA
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          2556 Jefferson St, Napa, CA
+        </a>
+
+
+
         <ActionIcon
           component="a"
           href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"

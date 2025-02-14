@@ -7,7 +7,7 @@
   position: relative;
   padding: var(--mantine-spacing-xl);
   border-radius: 10px;
-  background-color: var(--mantine-color-pink-light);
+  background-color:var(--mantine-color-pink-light);
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .icon {
-  color: var(--mantine-color-red-filled);
+  color: #F23E61
 }
 
 .title {
@@ -44,6 +44,8 @@
   letter-spacing: 2px;
   text-transform: none; /* Keeps natural flow */
   color: #555; /* Slightly darker for contrast */
+  text-transform: capitalize;
+
 
   
    
