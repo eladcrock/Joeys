@@ -58,13 +58,17 @@ export function FeaturesAsymmetrical() {
 
   return (
     <Container mt={30} mb={30} size="lg">
+      <br />
       <Title order={1} mb="xl" mt="md" className={classes.head}>
      Services 🍰{" "}🍩
       {" "}
       </Title>
+      <br />
       <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
         {items}
       </SimpleGrid>
+      <br />
+      <br />
     </Container>
   );
 }

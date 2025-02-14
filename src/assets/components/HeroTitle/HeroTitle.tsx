@@ -30,14 +30,16 @@ export function HeroTitle() {
         </Text>{" "}
       </h1>
       <h2> Panaderia Y Pasteleria</h2>
+      <br />
+      <br />
       <img src={cakeDrawing} alt="Cake Drawing" className={classes.heroImage} />
-
+      <br></br>
       {/* <Text className={classes.description}>
         The Best Mexican Pastries in the Napa Valley
       </Text> */}
 
-      <Stack gap={1} align="center" mt="md">
-        <Group justify="center" style={{ gap: 6 }}>
+      <Stack gap={1} align="center" mt="md" >
+        <Group justify="center" style={{ gap: 6, paddingBottom: 0.5 }}  >
           <ActionIcon
             component="a"
             href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
@@ -64,10 +66,13 @@ export function HeroTitle() {
             <Phone size={15} />
           </ActionIcon>
           <Text color="dimmed">(707) 254-9027</Text>
+        
         </Group>
       </Stack>
 
       <br></br>
+      <br />
+
       <Button
         className={classes.control}
         size="lg"
@@ -76,11 +81,14 @@ export function HeroTitle() {
       >
         Contact Us
       </Button>
-      < br />
+      <br />
+      <br />
+      <br />
 
       <Modal opened={modalOpened} onClose={() => setModalOpened(false)}>
         <GetInTouchSimple />
       </Modal>
+      <br />
     </Container>
   );
   // Removed custom useState function

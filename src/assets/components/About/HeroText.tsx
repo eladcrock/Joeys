@@ -15,7 +15,7 @@ export function HeroText() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>About Us {" "} {" "} 🧑‍🧑‍🧒‍🧒 </Title>
-
+        <br />
         <Container p={0} size={600}>
           <Text size="lg" c="dimmed" className={classes.description}>
             <p>
@@ -34,6 +34,8 @@ export function HeroText() {
               inviting space where the simple joy of a freshly baked treat can
               brighten anyone’s day.
             </p>
+            <br />
+            <br />
           </Text>
         </Container>
 

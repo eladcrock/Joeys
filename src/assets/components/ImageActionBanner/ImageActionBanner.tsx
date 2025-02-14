@@ -1,37 +1,39 @@
-import { Button, Card, Overlay, Text, Title, ActionIcon } from '@mantine/core';
-import classes from './ImageActionBanner.module.css';
-import { MapPin } from 'tabler-icons-react';
+import { Button, Card, Overlay, Text, Title, ActionIcon } from "@mantine/core";
+import classes from "./ImageActionBanner.module.css";
+import { MapPin } from "tabler-icons-react";
 
 export function ImageActionBanner() {
   return (
-
-      <>
-        <Title order={2} mb="xs" className={classes.head}>
+    <>
+      <br />
+      <br />
+      <Title order={2} mb="xs" className={classes.head}>
         Convienently Located
       </Title>
-      <Text size="md" color="dimmed" mb="xl"> 
-      2556 Jefferson St, Napa, CA
-      <ActionIcon
+      <Text size="md" color="dimmed" mb="xl">
+        2556 Jefferson St, Napa, CA
+        <ActionIcon
           component="a"
           href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
           target="_blank"
           rel="noopener noreferrer"
           ml="xs"
-          style={{ 
-            verticalAlign: 'middle', 
-            background: 'linear-gradient(to right, #B0B0B0, #555555)', 
-            color: 'white' 
-          }}        >
+          style={{
+            verticalAlign: "middle",
+            background: "linear-gradient(to right, #B0B0B0, #555555)",
+            color: "white",
+          }}
+        >
           <MapPin size={20} />
         </ActionIcon>
- </Text>
+      </Text>
+      <br />
       <Card radius="md" className={classes.card}>
         <Overlay className={classes.overlay} opacity={0.55} zIndex={0} />
 
         <div className={classes.content}>
-        
-            <Button
-            className={classes.action} 
+          <Button
+            className={classes.action}
             variant="white"
             color="dark"
             size="xs"
@@ -39,11 +41,13 @@ export function ImageActionBanner() {
             href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
             target="_blank"
             rel="noopener noreferrer"
-            >
+          >
             Get Directions
-            </Button>
-            
+          </Button>
         </div>
-      </Card></>
+      </Card>
+      <br />
+      <br />
+    </>
   );
 }

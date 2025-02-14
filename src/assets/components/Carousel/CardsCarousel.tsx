@@ -91,9 +91,11 @@ export function CardsCarousel() {
   ));
 
   return (<Container>
+    <br />
       <Title order={1} mb="xl" mt="md" className={classes.head}>
       Display Case {" "} 👀
       </Title>
+      <br />
 
 
 
@@ -107,6 +109,8 @@ export function CardsCarousel() {
     >
       {slides}
     </Carousel>
+    <br />
+    <br />
   </Container>
   );
 }

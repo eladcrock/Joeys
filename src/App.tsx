@@ -31,23 +31,28 @@ function App() {
         <HeroTitle />
       </div>
       < br />
+      <br />
       {/* Container to wrap all content and ensure a column layout */}
       {/* Gallery*/}                                      
       <div id="gallery">
         <CardsCarousel />
       </div>
       <br />
+      <br />
       {/* Services */}
       <div id="services">
         <FeaturesAsymmetrical />
+        <br />
       </div>
       {/* Getting here*/}
       < br />
+      <br />
       <div id="directions">
         <ImageActionBanner />
       </div>
       {/* about Section */}
       <div id="about">
+        <br />
         <HeroText />
       </div>
       {/* ADD TESTIMONIAL Section */}
