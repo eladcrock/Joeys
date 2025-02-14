@@ -8,7 +8,7 @@ export function ImageActionBanner() {
       <br />
       <br />
       <Title order={2} mb="xs" className={classes.head}>
-        Convienently Located
+        Location
       </Title>
       <Text size="md" color="dimmed" mb="xl">
         2556 Jefferson St, Napa, CA

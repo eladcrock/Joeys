@@ -35,6 +35,8 @@
   }
 
   .head {
+    font-size: 2.5rem;
+
     font-family: "Lobster", cursive;
     letter-spacing: 2px;
     text-transform: none; /* Keeps natural flow */

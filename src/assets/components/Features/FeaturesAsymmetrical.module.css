@@ -40,6 +40,7 @@
 }
 .head {
   font-family: "Lobster", cursive;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   text-transform: none; /* Keeps natural flow */
   color: #555; /* Slightly darker for contrast */

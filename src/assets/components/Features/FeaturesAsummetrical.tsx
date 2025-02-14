@@ -64,11 +64,10 @@ export function FeaturesAsymmetrical() {
       {" "}
       </Title>
       <br />
-      <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
+      <br />
+      <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={100}>
         {items}
       </SimpleGrid>
-      <br />
-      <br />
     </Container>
   );
 }
