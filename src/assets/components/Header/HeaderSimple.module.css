@@ -1,12 +1,12 @@
 .header {
-  height: rem(56px);
+  height: rem(34x);
   margin-bottom: rem(120px);
   background-color: var(--mantine-color-body);
   border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
 
 .inner {
-  height: rem(56px);
+  height: rem(48px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,5 +29,36 @@
   [data-mantine-color-scheme] &[data-active] {
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
+  }
+}
+/* Show the hamburger menu and hide the desktop menu on mobile viewports */
+.desktopMenu {
+  display: flex;
+}
+
+.mobileBurger {
+  display: none;
+}
+
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  padding: 10px; /* Add some padding */
+}
+
+/* Show the hamburger menu and hide the desktop menu on mobile viewports */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobileBurger {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
   }
 }

@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { Burger, Container, Group, Modal } from '@mantine/core';
+import { Burger, Container, Group, Modal, Collapse } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
-import{ GetInTouchSimple} from '../GetInTouch/GetInTouchSimple';
+import { GetInTouchSimple } from '../GetInTouch/GetInTouchSimple';
 
 const links = [
-  { link: '#home', label: 'Home' },
   { link: '#about', label: 'About' },
   { link: '#gallery', label: 'Gallery' },
   { link: '#services', label: 'Services' },
@@ -14,11 +13,11 @@ const links = [
 ];
 
 export function HeaderSimple() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle }] = useDisclosure();
   const [active, setActive] = useState(links[0].link);
   const [modalOpened, setModalOpened] = useState(false);
 
-  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, link: string) => {
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     event.preventDefault();
     if (link === '#contact') {
       setModalOpened(true);
@@ -44,19 +43,19 @@ export function HeaderSimple() {
   ));
 
   return (
-    <header className={classes.header}>
+    <header className={classes.header} >
       <Container size="md" className={classes.inner}>
-        <div style={{ width: 28, height: 28 }} />
-        <Group gap={5} visibleFrom="xs">
+        <Group gap={5} className={classes.desktopMenu}>
           {items}
         </Group>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <Burger opened={opened} onClick={toggle} className={classes.mobileBurger} size="sm" />
       </Container>
-      <Modal
-        opened={modalOpened}
-        onClose={() => setModalOpened(false)}
-        title="Get in Touch"
-      >
+
+      <Collapse in={opened}>
+        <div className={classes.mobileMenu}>{items}</div>
+      </Collapse>
+
+      <Modal opened={modalOpened} onClose={() => setModalOpened(false)} closeOnClickOutside>
         <GetInTouchSimple />
       </Modal>
     </header>
