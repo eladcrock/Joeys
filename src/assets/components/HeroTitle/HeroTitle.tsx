@@ -38,8 +38,8 @@ export function HeroTitle() {
         The Best Mexican Pastries in the Napa Valley
       </Text> */}
 
-      <Stack gap={1} align="center" mt="md" >
-        <Group justify="center" style={{ gap: 6, paddingBottom: 0.5}}  >
+      <Stack gap={1} align="center" mt="md">
+        <Group justify="center" style={{ gap: 6, paddingBottom: 0.5 }}>
           <ActionIcon
             component="a"
             href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
@@ -51,27 +51,16 @@ export function HeroTitle() {
           >
             <MapPin size={15} />
           </ActionIcon>
-          <Text color="dimmed"><a
-          href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "inherit", textDecoration: "none" }}
-        >
-          2556 Jefferson St, Napa, CA   
-        </a>
-
-
-
-
-
-
+          <Text color="dimmed">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              2556 Jefferson St, Napa, CA
+            </a>
           </Text>
-
-
-
-
-
-
         </Group>
 
         <Group justify="center" style={{ gap: 6 }}>
@@ -86,14 +75,13 @@ export function HeroTitle() {
             <Phone size={15} />
           </ActionIcon>
           <Text color="dimmed">
-          <a
+            <a
               href="tel:+17072549027"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               (707) 254-9027
             </a>
           </Text>
-        
         </Group>
       </Stack>
 
@@ -104,6 +92,8 @@ export function HeroTitle() {
         className={classes.control}
         size="lg"
         variant="gradient"
+        gradient={{ from: "pink", to: '#F23E61' }}
+
         onClick={() => setModalOpened(true)}
       >
         Contact Us

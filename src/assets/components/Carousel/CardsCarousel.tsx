@@ -100,7 +100,6 @@ export function CardsCarousel() {
 
 
     <Carousel
-      withIndicators
       loop // ✅ Fix infinite looping issue
       slideSize={{ base: '100%', sm: '50%', md: '33.3333%' }}
       slideGap="md"

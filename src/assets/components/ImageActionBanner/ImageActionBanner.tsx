@@ -37,7 +37,6 @@ export function ImageActionBanner() {
           <MapPin size={20} />
         </ActionIcon>
       </Text>
-      <br />
       <Card radius="md" className={classes.card}>
         <Overlay className={classes.overlay} opacity={0.55} zIndex={0} />
 

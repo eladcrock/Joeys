@@ -56,6 +56,10 @@
     margin-top: var(--mantine-spacing-xl);
   }
 }
+.control:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  background-color: linear-gradient(to right, #FF6F00, #FF8F00); /* Add a new gradient on hover */
+}
 
 .control {
   height: 54px;
@@ -69,6 +73,10 @@
     flex: 1;
   }
 }
+
+
+
+
 contact-info {
   display: flex;
   justify-content: center;
