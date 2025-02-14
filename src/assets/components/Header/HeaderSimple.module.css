@@ -6,7 +6,7 @@
 }
 
 .inner {
-  height: rem(48px);
+  height: rem(44px);
   display: flex;
   justify-content: space-between;
   align-items: center;

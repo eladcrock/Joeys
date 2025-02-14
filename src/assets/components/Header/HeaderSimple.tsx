@@ -13,7 +13,7 @@ const links = [
 ];
 
 export function HeaderSimple() {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const [modalOpened, setModalOpened] = useState(false);
 
@@ -28,7 +28,10 @@ export function HeaderSimple() {
       }
     }
     setActive(link);
+    close(); // Close the menu when a link is clicked
+
   };
+
 
   const items = links.map((link) => (
     <a
