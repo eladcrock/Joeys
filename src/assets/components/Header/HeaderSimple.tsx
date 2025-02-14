@@ -19,19 +19,20 @@ export function HeaderSimple() {
 
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     event.preventDefault();
+    setActive(link);
+    close(); // Close the menu when a link is clicked
+
     if (link === '#contact') {
       setModalOpened(true);
     } else {
       const targetElement = document.querySelector(link);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure the menu closes before scrolling
       }
     }
-    setActive(link);
-    close(); // Close the menu when a link is clicked
-
   };
-
 
   const items = links.map((link) => (
     <a
@@ -46,7 +47,7 @@ export function HeaderSimple() {
   ));
 
   return (
-    <header className={classes.header} >
+    <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <Group gap={5} className={classes.desktopMenu}>
           {items}
