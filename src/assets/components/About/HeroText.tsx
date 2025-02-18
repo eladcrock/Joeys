@@ -52,11 +52,11 @@ export function HeroText() {
         </div>
       </div>
       <Modal
-        opened={modalOpened}
-        onClose={() => setModalOpened(false)}
-      >
-        <GetInTouchSimple />
-      </Modal>
+  opened={modalOpened}
+  onClose={() => setModalOpened(false)}
+>
+  <GetInTouchSimple closeModal={() => setModalOpened(false)} />
+</Modal>
     </Container>
   );
 }

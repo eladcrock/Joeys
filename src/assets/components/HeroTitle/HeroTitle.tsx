@@ -92,8 +92,7 @@ export function HeroTitle() {
         className={classes.control}
         size="lg"
         variant="gradient"
-        gradient={{ from: "pink", to: '#F23E61' }}
-
+        gradient={{ from: "pink", to: "#F23E61" }}
         onClick={() => setModalOpened(true)}
       >
         Contact Us
@@ -103,7 +102,7 @@ export function HeroTitle() {
       <br />
 
       <Modal opened={modalOpened} onClose={() => setModalOpened(false)}>
-        <GetInTouchSimple />
+        <GetInTouchSimple closeModal={() => setModalOpened(false)} />
       </Modal>
       <br />
     </Container>

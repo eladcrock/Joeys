@@ -1,7 +1,14 @@
 import { Button, Group, SimpleGrid, Textarea, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import emailjs from '@emailjs/browser';
 
-export function GetInTouchSimple() {
+interface GetInTouchSimpleProps {
+  closeModal: () => void;
+}
+
+emailjs.init('H7zIxPY_AjtsJtkru'); // Initialize EmailJS with Public Key
+
+export function GetInTouchSimple({ closeModal }: GetInTouchSimpleProps) {
   const form = useForm({
     initialValues: {
       name: '',
@@ -10,14 +17,42 @@ export function GetInTouchSimple() {
       message: '',
     },
     validate: {
-      name: (value) => value.trim().length < 2,
-      email: (value) => !/^\S+@\S+$/.test(value),
-      phone: (value) => !/^\d{10}$/.test(value), // Simple phone number validation
+      name: (value) => (value.trim().length < 2 ? 'Name must be at least 2 characters' : null),
+      email: (value) => (!/^\S+@\S+$/.test(value) ? 'Invalid email' : null),
+      phone: (value) => (!/^\d{10}$/.test(value) ? 'Invalid phone number' : null),
     },
   });
 
+  const sendEmail = async (values: typeof form.values) => {
+    console.log("Sending email with values:", values);
+    
+    // Close modal immediately after clicking send
+    closeModal();
+
+    try {
+      const response = await emailjs.send(
+        'service_ozt78yq', // Your EmailJS Service ID
+        'template_mly52e9', // Your EmailJS Template ID
+        {
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+        },
+        'H7zIxPY_AjtsJtkru' // Your EmailJS Public Key
+      );
+
+      console.log("EmailJS Response:", response);
+      alert('Message sent successfully!');
+      form.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      alert('Failed to send message. Please try again.');
+    }
+  };
+
   return (
-    <form onSubmit={form.onSubmit(() => {})}>
+    <form onSubmit={form.onSubmit(sendEmail)}>
       <Title
         order={1}
         size="h1"
@@ -25,7 +60,7 @@ export function GetInTouchSimple() {
         fw={900}
         ta="center"
       >
-        Lets talk more
+        Let’s talk more
       </Title>
 
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
