@@ -43,11 +43,9 @@ export function GetInTouchSimple({ closeModal }: GetInTouchSimpleProps) {
       );
 
       console.log("EmailJS Response:", response);
-      alert('Message sent successfully!');
       form.reset();
     } catch (error) {
       console.error("EmailJS Error:", error);
-      alert('Failed to send message. Please try again.');
     }
   };
 
