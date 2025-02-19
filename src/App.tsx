@@ -16,16 +16,19 @@ import { useEffect } from "react";
 
 
 function App() {
+  
 
 
   useEffect(() => {
     AOS.init({
       duration: 1000, // Optional: Set global animation duration
-      // Add other global options here
+      once: true, // ✅ Ensure animation happens only once
     });
   }, []);
   return (
     <MantineProvider>
+            <div data-aos="fade-up" className="app-container"> {/* Apply fade-in to the whole page */}
+
       <HeaderSimple />
 
       <div id="home" >
@@ -63,6 +66,7 @@ function App() {
       {/* ADD TESTIMONIAL Section */}
       {/* Footer Section */}
       <FooterSimple />
+    </div>
     </MantineProvider>
   );
 }
