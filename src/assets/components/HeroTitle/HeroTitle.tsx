@@ -48,6 +48,8 @@ export function HeroTitle() {
               background: "linear-gradient(to right, #B0B0B0, #555555)",
               color: "white",
             }}
+            aria-label="Navigate to 2556 Jefferson St, Napa, CA on Google Maps"
+
           >
             <MapPin size={15} />
           </ActionIcon>
@@ -57,6 +59,8 @@ export function HeroTitle() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "inherit", textDecoration: "none" }}
+              aria-label="Navigate to 2556 Jefferson St, Napa, CA on Google Maps"
+
             >
               2556 Jefferson St, Napa, CA
             </a>
@@ -71,6 +75,8 @@ export function HeroTitle() {
               background: "linear-gradient(to right, #B0B0B0, #555555)",
               color: "white",
             }}
+            aria-label="Call 17072549027"
+
           >
             <Phone size={15} />
           </ActionIcon>
@@ -78,7 +84,10 @@ export function HeroTitle() {
             <a
               href="tel:+17072549027"
               style={{ color: "inherit", textDecoration: "none" }}
+              aria-label="Call 17072549027"
+
             >
+              
               (707) 254-9027
             </a>
           </Text>
@@ -94,6 +103,8 @@ export function HeroTitle() {
         variant="gradient"
         gradient={{ from: "pink", to: "#F23E61" }}
         onClick={() => setModalOpened(true)}
+        aria-label="Contact Us"
+
       >
         Contact Us
       </Button>

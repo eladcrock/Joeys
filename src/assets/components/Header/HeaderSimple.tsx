@@ -44,6 +44,8 @@ export function HeaderSimple() {
       className={classes.link}
       data-active={active === link.link || undefined}
       onClick={(event) => handleScroll(event, link.link)}
+      aria-label={`Navigate to ${link.label}`} // Add aria-label for accessibility
+
     >
       {link.label}
     </a>
@@ -60,6 +62,8 @@ export function HeaderSimple() {
           onClick={toggle}
           className={classes.mobileBurger}
           size="sm"
+          aria-label="Toggle navigation menu" // Add aria-label for accessibility
+
         />
       </Container>
 

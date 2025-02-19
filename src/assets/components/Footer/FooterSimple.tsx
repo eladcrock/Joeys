@@ -37,6 +37,7 @@ export function FooterSimple() {
       href={link.link}
       size="sm"
       onClick={(event) => handleScroll(event, link.link)}
+      aria-label={`Navigate to ${link.label}`} // Add aria-label for accessibility
     >
       {link.label}
     </Anchor>

@@ -46,6 +46,7 @@ export function HeroText() {
             variant="default"
             color="gray"
             onClick={() => setModalOpened(true)}
+            aria-label="Contact Us"
           >
             Get in touch
           </Button>

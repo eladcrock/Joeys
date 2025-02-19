@@ -27,7 +27,7 @@ function App() {
   }, []);
   return (
     <MantineProvider>
-            <div data-aos="fade-up" className="app-container"> {/* Apply fade-in to the whole page */}
+            <div data-aos="fade-in" className="app-container"> {/* Apply fade-in to the whole page */}
 
       <HeaderSimple />
 

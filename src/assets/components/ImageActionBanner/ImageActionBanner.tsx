@@ -33,6 +33,8 @@ export function ImageActionBanner() {
             background: "linear-gradient(to right, #B0B0B0, #555555)",
             color: "white",
           }}
+          aria-label="Navigate to 2556 Jefferson St, Napa, CA on Google Maps"
+
         >
           <MapPin size={20} />
         </ActionIcon>
@@ -50,9 +52,11 @@ export function ImageActionBanner() {
             href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Navigate to 2556 Jefferson St, Napa, CA on Google Maps"
+
           >
             Get Directions
-          </Button>
+          </Button  >
         </div>
       </Card>
       <br />

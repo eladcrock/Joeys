@@ -99,7 +99,9 @@ export function GetInTouchSimple({ closeModal }: GetInTouchSimpleProps) {
       />
 
       <Group justify="center" mt="xl">
-        <Button type="submit" size="md">
+        <Button type="submit" size="md"
+         aria-label='Send message'
+>
           Send message
         </Button>
       </Group>
