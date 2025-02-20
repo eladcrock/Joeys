@@ -55,7 +55,7 @@ export function HeroText() {
       <Modal
         opened={modalOpened}
         onClose={() => setModalOpened(false)}
-        size="lg" // Set a maximum width for the modal
+      
       >
         <GetInTouchSimple closeModal={() => setModalOpened(false)} />
       </Modal>
