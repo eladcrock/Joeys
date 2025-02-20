@@ -14,7 +14,7 @@ export function HeroText() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>About Us  </Title>
+        <Title className={classes.title}>About Us </Title>
         <br />
         <Container p={0} size={600}>
           <Text size="lg" c="dimmed" className={classes.description}>
@@ -24,7 +24,7 @@ export function HeroText() {
               and flavor to every table. We take pride in crafting each baked
               good with care, using time-honored recipes and the finest
               ingredients to ensure that every bite is as delicious as it is
-              memorable. 
+              memorable.
             </p>
             <br />
             <p>
@@ -53,11 +53,12 @@ export function HeroText() {
         </div>
       </div>
       <Modal
-  opened={modalOpened}
-  onClose={() => setModalOpened(false)}
->
-  <GetInTouchSimple closeModal={() => setModalOpened(false)} />
-</Modal>
+        opened={modalOpened}
+        onClose={() => setModalOpened(false)}
+        size="lg" // Set a maximum width for the modal
+      >
+        <GetInTouchSimple closeModal={() => setModalOpened(false)} />
+      </Modal>
     </Container>
   );
 }
