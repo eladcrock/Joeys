@@ -5,8 +5,9 @@
 
 .feature {
   position: relative;
-  padding: var(--mantine-spacing-xl);
-  border-radius: 10px;
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 20px; 
+    border-radius: 10px;
   background-color: var(--mantine-color-pink-light);
   text-align: center;
 }
@@ -26,17 +27,22 @@
 .content {
   position: relative;
   z-index: 2;
-  padding: 20px;
+  padding: 30px;
+  margin-bottom: 2rem;
 }
 
 .icon {
   color: #F23E61;
+  margin-bottom: 10px; /* Adjust margin as needed */
+
 }
 
 .title {
   color: var(--mantine-color-brown-dark);
   font-family: "Poppins", Greycliff CF, sans-serif; /* Modern & clean */
   font-weight: bold;
+  
+
 }
 .head {
   font-family: "Lobster";  letter-spacing: 2px;
