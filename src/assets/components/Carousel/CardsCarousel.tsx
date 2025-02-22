@@ -6,7 +6,6 @@ import "@mantine/carousel/styles.css";
 import "@mantine/core/styles.css";
 import cake from "../../images/Cake.jpg";
 import choco from "../../images/Choco.jpg";
-import conchas from "../../images/Conchas.jpg";
 import treatsBright from "../../images/TreatsBright.jpg"; 
 import Psalm from "../../images/PsalmCake.jpg";
 import Party from "../../images/PartyPrep.jpg";
@@ -53,10 +52,6 @@ const data = [
 
   },
 
-  {
-    image: conchas,
-    title: "Conchas",
-  },
 
   {
     image: treatsBright,
