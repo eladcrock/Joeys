@@ -11,6 +11,7 @@ import { HeroText } from "./assets/components/About/HeroText";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "./index.css";
 
 
 
