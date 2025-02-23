@@ -2,9 +2,19 @@ import { Button, Container, Text, Title, Modal } from "@mantine/core";
 import { Dots } from "./Dots.tsx";
 import classes from "./HeroText.module.css";
 import { GetInTouchSimple } from "../GetInTouch/GetInTouchSimple.tsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export function HeroText() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Optional: Set global animation duration
+      once: true, // ✅ Ensure animation happens only once
+    });
+  }, []);
+  
   const [modalOpened, setModalOpened] = useState(false);
   return (
     <Container className={classes.wrapper} size={1400}>
@@ -39,7 +49,8 @@ export function HeroText() {
           </Text>
         </Container>
 
-        <div className={classes.controls}>
+        <div className={classes.controls}
+        >
           <Button
             className={classes.control}
             size="lg"

@@ -19,7 +19,7 @@ interface CardProps {
   category: string;
 }
 
-function Card({ image, title, }: CardProps) {
+function Card({ image, title }: CardProps) {
   return (
     <Paper
       shadow="md"
@@ -28,83 +28,60 @@ function Card({ image, title, }: CardProps) {
       style={{ backgroundImage: `url(${image})` }}
       className={classes.card}
     >
-      <div>
-        
-       
-      </div>
-    
       <Title order={3} className={classes.title}>
-          {title}
-        </Title>
+        {title}
+      </Title>
     </Paper>
   );
 }
 
 const data = [
-
-  {
-    image: cake,
-    title: "Custom Cakes",
-  },
-  {
-    image: choco,
-    title: "Seasonal Items",
-
-  },
-
-
-  {
-    image: treatsBright,
-    title: "Variety of Treats",
-  },
-
-  {
-    image: Party,
-    title: "Party Prep",
-  },
-
-
-  {
-    image: Psalm,
-    title: "All Occasions",
-  },
-  
-  {
-    image: shelf,
-    title: "Daily Specials",
-  },
- 
+  { image: cake, title: "Custom Cakes" },
+  { image: choco, title: "Seasonal Items" },
+  { image: treatsBright, title: "Variety of Treats" },
+  { image: Party, title: "Party Prep" },
+  { image: Psalm, title: "All Occasions" },
+  { image: shelf, title: "Daily Specials" },
 ];
 
 export function CardsCarousel() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
+ 
+
   const slides = data.map((item) => (
     <Carousel.Slide key={item.title}>
       <Card category={""} {...item} />
     </Carousel.Slide>
   ));
 
-  return (<Container>
-    <br />
-      <Title order={1} mb="xl" mt="md" className={classes.head}>
-      Display Case {" "} 👀
+  return (
+    <Container>
+      <br />
+      {/* Title with fade animation */}
+      <Title
+        order={1}
+        mb="xl"
+        mt="md"
+        className={classes.head}
+      >
+        Display Case 👀
       </Title>
       <br />
 
+      <Carousel
+        loop
+        slideSize={{ base: '100%', sm: '50%', md: '33.3333%' }}
+        slideGap="md"
+        align="start"
+        slidesToScroll={mobile ? 1 : 1}
+      >
+        {slides}
+      </Carousel>
 
-
-    <Carousel
-      loop // ✅ Fix infinite looping issue
-      slideSize={{ base: '100%', sm: '50%', md: '33.3333%' }}
-      slideGap="md"
-      align="start"
-      slidesToScroll={mobile ? 1 : 1} // ✅ Ensure one slide scrolls at a time
-    >
-      {slides}
-    </Carousel>
-    <br />
-    <br />
-  </Container>
+      <br />
+      <br />
+    </Container>
   );
 }

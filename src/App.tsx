@@ -41,7 +41,7 @@ function App() {
       {/* Gallery*/}   
                                    
       <div id="gallery">
-        <CardsCarousel />
+        <CardsCarousel  />
       </div>
       <br />
       <br />

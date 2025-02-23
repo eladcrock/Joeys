@@ -2,6 +2,7 @@ import { IconCake, IconCookie, IconCalendarEvent } from "@tabler/icons-react";
 import { Container, SimpleGrid, Text, Title } from "@mantine/core";
 import classes from "./FeaturesAsymmetrical.module.css";
 
+
 interface FeatureProps extends React.ComponentPropsWithoutRef<"div"> {
   icon: React.FC<any>;
   title: string;
@@ -56,10 +57,13 @@ const mockdata = [
 export function FeaturesAsymmetrical() {
   const items = mockdata.map((item) => <Feature {...item} key={item.title} />);
 
+  
+
   return (
     <Container mt={30} mb={30} size="lg">
       <br />
-      <Title order={1} mb="xl" mt="md" className={classes.head}>
+      <Title order={1} mb="xl" mt="md" className={classes.head}
+>
         Services 🍰{" "}🍩
       </Title>
       <br />
