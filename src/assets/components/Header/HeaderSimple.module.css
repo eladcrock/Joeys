@@ -29,6 +29,8 @@
   [data-mantine-color-scheme] &[data-active] {
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+
   }
 }
 /* Show the hamburger menu and hide the desktop menu on mobile viewports */
