@@ -58,6 +58,10 @@ export function HeroText() {
             color="gray"
             onClick={() => setModalOpened(true)}
             aria-label="Contact Us"
+            style={{
+              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1)', // Softer drop shadow
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition
+            }}
           >
             Get in touch
           </Button>

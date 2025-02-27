@@ -101,7 +101,11 @@ export function GetInTouchSimple({ closeModal }: GetInTouchSimpleProps) {
       <Group justify="center" mt="xl">
         <Button type="submit" size="md"
          aria-label='Send message'
->
+         style={{
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)', // Modern drop shadow
+          transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition
+        }}
+      >
           Send message
         </Button>
       </Group>

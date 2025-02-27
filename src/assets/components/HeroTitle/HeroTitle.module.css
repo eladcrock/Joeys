@@ -65,6 +65,8 @@
   height: 54px;
   padding-left: 38px;
   padding-right: 38px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+
 
   @media (max-width: 576px) {
     height: 54px;

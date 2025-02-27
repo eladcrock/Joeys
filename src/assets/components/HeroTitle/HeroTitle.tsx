@@ -46,6 +46,9 @@ export function HeroTitle() {
             href="https://www.google.com/maps/search/?api=1&query=2556+Jefferson+St,+Napa,+CA"
             target="_blank"
             style={{
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)', // Modern drop shadow
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition
+             
               background: "linear-gradient(to right, #B0B0B0, #555555)",
               color: "white",
             }}
@@ -73,6 +76,8 @@ export function HeroTitle() {
             component="a"
             href="tel:+17072549027"
             style={{
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)', // Modern drop shadow
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition
               background: "linear-gradient(to right, #B0B0B0, #555555)",
               color: "white",
             }}

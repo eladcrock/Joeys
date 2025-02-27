@@ -29,6 +29,8 @@ export function ImageActionBanner() {
           rel="noopener noreferrer"
           ml="xs"
           style={{
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)', // Modern drop shadow
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition
             verticalAlign: "middle",
             background: "linear-gradient(to right, #B0B0B0, #555555)",
             color: "white",

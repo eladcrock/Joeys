@@ -8,6 +8,8 @@
     background-size: cover;
     background-position: center;
     background-image: url(/Users/dalec/Joeys_Bakery/src/assets/images/Store.jpg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+
   }
   
   .content {
@@ -21,6 +23,7 @@
     position: absolute;
     bottom: var(--mantine-spacing-xl);
     right: var(--mantine-spacing-xl);
+
   }
   
   .title {
@@ -43,5 +46,10 @@
     color: #555; /* Slightly darker for contrast */
      
     }
-  
+  .action {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition
+    for transform and box-shadow */
+    
+  }
   

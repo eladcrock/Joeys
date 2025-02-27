@@ -17,6 +17,9 @@
   justify-content: center;
   height: 20rem; /* Matches ImageActionBanner height */
   width: 100%; /* Ensures it takes full column width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
 }
 .overlay {
   position: absolute;
@@ -28,6 +31,8 @@
   background-color: var(--mantine-color-yellow-light);
   z-index: 1;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 0, 0, 0.05); /* Softened drop shadow */
+
 }
 
 .content {
@@ -58,6 +63,8 @@
   letter-spacing: 2px;
   text-transform: none; /* Keeps natural flow */
   color: #555; /* Slightly darker for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for better readability */
+
 
   
    
