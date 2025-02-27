@@ -63,7 +63,8 @@
   letter-spacing: 2px;
   text-transform: none; /* Keeps natural flow */
   color: #555; /* Slightly darker for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+  text-transform: none; /* Keeps natural flow */
 
 
   

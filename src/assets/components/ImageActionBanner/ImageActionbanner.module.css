@@ -44,7 +44,9 @@
     letter-spacing: 2px;
     text-transform: none; /* Keeps natural flow */
     color: #555; /* Slightly darker for contrast */
-     
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+    text-transform: none; /* Keeps natural flow */
+
     }
   .action {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
@@ -52,4 +54,6 @@
     for transform and box-shadow */
     
   }
-  
+  .overlay {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Modern drop shadow */
+  }

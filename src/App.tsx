@@ -41,8 +41,6 @@ function App() {
       <div id="gallery">
         <CardsCarousel  />
       </div>
-      <br />
-      <br />
       {/* Services */}
 
       <div id="services">
